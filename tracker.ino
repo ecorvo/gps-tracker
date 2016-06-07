@@ -29,9 +29,6 @@ char *device;
 char *textToNumber;
 
 void setup() {
-  // Set pin for output
-  pinMode(13, OUTPUT);
-
   // Initialize the OLED display library
   DisplayManager::init();
   Serial.begin(9600);
@@ -125,10 +122,8 @@ void loop() {
 
         Serial.println("Waiting for response from test site...");
         Serial.println(str);
-        digitalWrite(13, LOW);
       } else {
         DisplayManager::writeText("NO GPS");
-        digitalWrite(13, HIGH);
         String str = "GET /device_reply/index.php?";
         str += "signal=false";
         str += "&text_to=";
