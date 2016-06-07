@@ -2,9 +2,10 @@
 
 
 require_once 'vendor/autoload.php';
-
+$sid = "ACCOUNT_SID"; // Your Account SID from www.twilio.com/console
+$token = "ACCOUNT_TOKEN"; // Your Auth Token from www.twilio.com/console
 /** Twilio client */
-$client = new Services_Twilio("AC8ed2351ef2156d21a66faf913443188c", "954e46f7be824414cb6b42aadd85232f");
+$client = new Services_Twilio($sid, $token);
 
 /** Check for GPS signal status */
 if ($_GET['signal'] == 'false') {
