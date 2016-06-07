@@ -108,7 +108,7 @@ void loop() {
         Serial.println((char*)gpsInfo.GPRMC);
         String gpsCoordinates = (char*)gpsInfo.GPRMC;
 
-        String str = "GET /find_my_device/index.php?";
+        String str = "GET /device_reply/index.php?";
         str += "signal=true";
         str += "&lat=";
         str += lat_format;
@@ -129,7 +129,7 @@ void loop() {
       } else {
         DisplayManager::writeText("NO GPS");
         digitalWrite(13, HIGH);
-        String str = "GET /find_my_device/index.php?";
+        String str = "GET /device_reply/index.php?";
         str += "signal=false";
         str += "&text_to=";
         str += callerId;
