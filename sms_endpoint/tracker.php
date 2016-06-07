@@ -1,8 +1,8 @@
 <?php
 require('vendor/autoload.php');
 
-$sid = "AC8ed2351ef2156d21a66faf913443188c"; // Your Account SID from www.twilio.com/console
-$token = "954e46f7be824414cb6b42aadd85232f"; // Your Auth Token from www.twilio.com/console
+$sid = "ACCOUNT_SID"; // Your Account SID from www.twilio.com/console
+$token = "ACCOUNT_TOKEN"; // Your Auth Token from www.twilio.com/console
 
 $client = new Twilio\Rest\Client($sid, $token);
 
