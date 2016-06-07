@@ -1,7 +1,4 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
 require('vendor/autoload.php');
 
 $sid = "AC8ed2351ef2156d21a66faf913443188c"; // Your Account SID from www.twilio.com/console
