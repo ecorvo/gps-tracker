@@ -17,7 +17,7 @@ if ($_GET['signal'] == 'false') {
 }
 
 /** fetch image from google using coordinates */
-$url = "https://maps.googleapis.com/maps/api/staticmap?center=" . $_GET['lat'] . "," . $_GET['lon'] . "&zoom=16&size=362x180&markers=color:green|size:mid|label:H|" . $_GET['lat'] . "," . $_GET['lon'] . "&sensor=false&key=AIzaSyADh43Ipq51PNxO6bvHZNlEjtvINFyfE0Q";
+$url = "https://maps.googleapis.com/maps/api/staticmap?center=" . $_GET['lat'] . "," . $_GET['lon'] . "&zoom=16&size=362x180&markers=color:green|size:mid|label:H|" . $_GET['lat'] . "," . $_GET['lon'] . "&sensor=false&key=API_KEY";
 file_put_contents($_SERVER['DOCUMENT_ROOT'] . "/find_my_device/tmp_files/tmp_g_map.png", file_get_contents($url));
 
 /** send MMS */
