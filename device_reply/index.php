@@ -11,7 +11,7 @@ $client = new Services_Twilio($sid, $token);
 if ($_GET['signal'] == 'false') {
     $client->account->messages->create(array(
         'To' => trim($_GET['text_to']),
-        'From' => "+13053631669",
+        'From' => "verified_twilio_number",
         'Body' => 'Location Unknown'
     ));
     die();
@@ -24,7 +24,7 @@ file_put_contents($_SERVER['DOCUMENT_ROOT'] . "/find_my_device/tmp_files/tmp_g_m
 /** send MMS */
 $client->account->messages->create(array(
     'To' => trim($_GET['text_to']),
-    'From' => "+13053631669",
+    'From' => "verified_twilio_number",
     'Body' => $_GET['lat'] . "," . $_GET['lon'],
     'MediaUrl' => 'http://utility.liveanswer.com/find_my_device/tmp_files/tmp_g_map.png'
 ));
