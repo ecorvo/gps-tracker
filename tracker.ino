@@ -12,7 +12,7 @@
 gpsSentenceInfoStruct gpsInfo;
 LGPRSClient client;
 
-#define SITE_URL "utility.liveanswer.com"
+#define SITE_URL "YOUR_SITE_URL"
 double latitude = 0.00;
 double longitude = 0.00;
 float dop = 100.00; //dilution of precision
