@@ -15,7 +15,5 @@ if (strpos(strtolower($_REQUEST['Body']), 'where') !== FALSE) {
 }
 
 $client->preview->wireless->commands->create('DE8636e37d538c45888b8884582f3c7d01', $command,
-    array(
-        'callbackUrl' => "https://devicemanager.mycompany.com/devices/524116518656369/commands"
-    )
+    array()
 );
