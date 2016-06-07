@@ -14,6 +14,6 @@ if (strpos(strtolower($_REQUEST['Body']), 'where') !== FALSE) {
     die();
 }
 
-$client->preview->wireless->commands->create('DE8636e37d538c45888b8884582f3c7d01', $command,
+$client->preview->wireless->commands->create(DEVICE_SID, $command,
     array()
 );
