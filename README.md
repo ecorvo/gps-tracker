@@ -8,3 +8,5 @@ and get back coordinates with map of where the device is located.
 3. Using GPS, devices acquires its position's coordinates
 4. GET request is sent back to a receiving endpoint with coordinates and the initial SMS number
 5. Coordinates are parsed into a map with pin using Google Map API and MMS is sent back to the initial sender.
+
+https://liveanswer.com/blog/twilio-signal-hackpack/
